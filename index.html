@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Threads — Local Clothing & Accessories</title>
+  <meta name="description" content="Urban Threads is a local clothing and accessories store. Shop new arrivals online or visit us in-store.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Signature element: a vertical "tape measure" rail that runs the length of the page,
+       marking each section like inches on a tailor's tape. Ties the tailoring/thread
+       theme of the store into the site's structure instead of a decorative flourish. -->
+  <div class="tape-rail" aria-hidden="true">
+    <span class="tape-mark" data-label="SHOP">0"</span>
+    <span class="tape-mark" data-label="ABOUT">6"</span>
+    <span class="tape-mark" data-label="VISIT">12"</span>
+    <span class="tape-mark" data-label="ASK">18"</span>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img class="logo-icon" src="images/logo-icon.png" alt="Urban Threads store icon">
+        <span class="logo">Urban<span>Threads</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="is-active">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="enquiries.html">Enquiries</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <label class="search-field">
+          <span class="visually-hidden">Search products</span>
+          <input type="search" placeholder="Search products…" name="q">
+        </label>
+        <button class="cart-btn" type="button" aria-label="View cart">
+          Cart <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="intro">
+      <div class="hero-copy">
+        <p class="eyebrow">New Season / In Store &amp; Online</p>
+        <h1>Cut for the city.<br>Made to move.</h1>
+        <p class="hero-sub">Urban Threads stocks everyday clothing and accessories designed
+          for a busy life — built well, priced fair, and ready off the rack or a click away.</p>
+        <div class="hero-actions">
+          <a href="gallery.html" class="btn btn-primary">Shop new arrivals</a>
+          <a href="contact.html" class="btn btn-ghost">Find our store</a>
+        </div>
+      </div>
+      <div class="hero-tag" aria-hidden="true">
+        <img class="hero-tag-img" src="images/products/Image1.jpg" alt="">
+        <span class="tag-sku">SKU 0192</span>
+        <span class="tag-price">R349.00</span>
+      </div>
+    </section>
+
+    <!-- ===== STORE BANNER ===== -->
+    <section class="store-banner">
+      <img src="images/products/Image5.jpg" alt="Jackets hanging on a clothing rack in store">
+    </section>
+
+    <!-- ===== INTRO STRIP ===== -->
+    <section class="shop" style="padding-top:0;">
+      <div class="section-head">
+        <p class="eyebrow">Welcome</p>
+        <h2>Family-run, since day one on Main Road.</h2>
+      </div>
+      <p class="shop-note" style="border-top:none; padding-top:0; max-width:65ch;">
+        Urban Threads started as a single rail of secondhand denim and has grown into a
+        full clothing and accessories store, without losing the eye for quality that opened
+        the doors. Browse the full <a href="gallery.html">gallery</a>, read more
+        <a href="about.html">about us</a>, or <a href="contact.html">visit the store</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="logo-link footer-logo">
+          <img class="logo-icon" src="images/logo-icon.png" alt="Urban Threads store icon">
+          <span class="logo">Urban<span>Threads</span></span>
+        </p>
+        <p>Local clothing &amp; accessories, in store and online.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="gallery.html">Clothing</a></li>
+            <li><a href="gallery.html">Accessories</a></li>
+            <li><a href="gallery.html">Footwear</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Store</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Visit</a></li>
+            <li><a href="enquiries.html">Enquiries</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="footer-legal">&copy; 2026 Urban Threads. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
