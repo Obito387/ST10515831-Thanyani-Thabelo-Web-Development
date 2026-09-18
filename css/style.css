@@ -229,6 +229,32 @@ section {
   border-radius: 4px;
 }
 
+.filter-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px; /* Creates the pill shape */
+  font-family: var(--font-base);
+  font-size: 0.9rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-chip:hover,
+.filter-chip.is-active {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
