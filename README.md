@@ -39,16 +39,16 @@ This project demonstrates semantic HTML structuring and modern CSS styling (Flex
 *(Below are screenshots demonstrating the responsive behavior of the website across different device breakpoints, tested via Browser Developer Tools).*
 
 ### Desktop View (> 900px)
-* ![Desktop Home Screen](images/readme/desktop-home.jpg)
-* ![Desktop Gallery Screen](images/readme/desktop-gallery.jpg)
+* ![Desktop Home Screen](screenshots/desktop-home.png)
+* ![Desktop Gallery Screen](screenshots/desktop-gallery.png)
 
 ### Tablet View (768px - 900px)
-* ![Tablet Home Screen](images/readme/tablet-home.jpg)
-* ![Tablet Gallery Screen](images/readme/tablet-gallery.jpg)
+* ![Tablet Home Screen](screenshots/tablet-home.png)
+* ![Tablet Gallery Screen](screenshots/tablet-gallery.png)
 
 ### Mobile View (< 768px)
-* ![Mobile Home Screen](images/readme/mobile-home.jpg)
-* ![Mobile Gallery Screen](images/readme/mobile-gallery.jpg)
+* ![Mobile Home Screen](screenshots/mobile-home.png)
+* ![Mobile Gallery Screen](screenshots/mobile-gallery.png)
 
 ---
 
