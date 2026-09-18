@@ -11,9 +11,6 @@
 </head>
 <body>
 
-  <!-- Signature element: a vertical "tape measure" rail that runs the length of the page,
-       marking each section like inches on a tailor's tape. Ties the tailoring/thread
-       theme of the store into the site's structure instead of a decorative flourish. -->
   <div class="tape-rail" aria-hidden="true">
     <span class="tape-mark" data-label="SHOP">0"</span>
     <span class="tape-mark" data-label="ABOUT">6"</span>
@@ -21,7 +18,6 @@
     <span class="tape-mark" data-label="ASK">18"</span>
   </div>
 
-  <!-- ===== HEADER ===== -->
   <header class="site-header" id="top">
     <div class="header-inner">
       <a href="index.html" class="logo-link">
@@ -53,7 +49,6 @@
 
   <main id="main-content">
 
-    <!-- ===== GALLERY / PRODUCT GRID ===== -->
     <section class="shop" id="shop">
       <div class="section-head">
         <p class="eyebrow">Gallery</p>
@@ -69,14 +64,30 @@
 
       <ul class="product-grid">
         <li class="product-card">
-          <div class="product-image"><img src="images/products/Image2.jpg" alt="Denim jacket hanging on a rail"></div>
+          <div class="product-image">
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/products/Image2-small.jpg">
+              <img src="images/products/Image2.jpg"
+                   srcset="images/products/Image2-small.jpg 400w, images/products/Image2.jpg 800w, images/products/Image2-large.jpg 1200w"
+                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                   alt="Denim jacket hanging on a rail" loading="lazy">
+            </picture>
+          </div>
           <p class="product-cat">Clothing</p>
           <h3>Canvas Field Jacket</h3>
           <p class="product-price">R899.00</p>
           <button class="btn btn-add" type="button" data-add>Add to cart</button>
         </li>
         <li class="product-card">
-          <div class="product-image"><img src="images/products/Image3.jpg" alt="Close-up of a leather belt"></div>
+          <div class="product-image">
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/products/Image3-small.jpg">
+              <img src="images/products/Image3.jpg"
+                   srcset="images/products/Image3-small.jpg 400w, images/products/Image3.jpg 800w, images/products/Image3-large.jpg 1200w"
+                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                   alt="Close-up of a leather belt" loading="lazy">
+            </picture>
+          </div>
           <p class="product-cat">Accessories</p>
           <h3>Woven Belt — Tan</h3>
           <p class="product-price">R249.00</p>
@@ -90,7 +101,15 @@
           <button class="btn btn-add" type="button" data-add>Add to cart</button>
         </li>
         <li class="product-card">
-          <div class="product-image"><img src="images/products/Image4.jpg" alt="Folded white polo shirt"></div>
+          <div class="product-image">
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/products/Image4-small.jpg">
+              <img src="images/products/Image4.jpg"
+                   srcset="images/products/Image4-small.jpg 400w, images/products/Image4.jpg 800w, images/products/Image4-large.jpg 1200w"
+                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                   alt="Folded white polo shirt" loading="lazy">
+            </picture>
+          </div>
           <p class="product-cat">Clothing</p>
           <h3>Relaxed Fit Tee</h3>
           <p class="product-price">R249.00</p>
@@ -104,7 +123,6 @@
 
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
