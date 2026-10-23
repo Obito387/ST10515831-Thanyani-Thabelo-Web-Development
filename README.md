@@ -76,3 +76,5 @@ To run and test this project locally:
 * Polo Shirt: TuanAnh Blue — unsplash.com/photos/gYOQbqbs_mE
 * Store Banner: Amanda Vick — unsplash.com/photos/zw_oaDbfzyE
 * About Interior: Hugo Clément — unsplash.com/photos/JGtPrdnMgQc
+
+
