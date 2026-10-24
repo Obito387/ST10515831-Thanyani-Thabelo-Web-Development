@@ -4,16 +4,13 @@
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>Contact & Visit — Urban Threads</title>
-			<meta name="description" content="Find Urban Threads: address, opening hours, and map.">
+			<meta name="keywords" content="Urban Threads, Pretoria clothing, boutique, fashion, local wear">
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 			<link rel="stylesheet" href="css/style.css">
-	 </head>
+			<meta name="description" content="Visit Urban Threads at 214 Troye Street, Pretoria. Find opening hours, an interactive map and a contact form for general messages.">
+			<link rel="canonical" href="https://splendorous-bienenstitch-e1a401.netlify.app/contact">	 </head>
 	 <body>
-
-			<!-- Signature element: a vertical "tape measure" rail that runs the length of the page,
-			marking each section like inches on a tailor's tape. Ties the tailoring/thread
-			theme of the store into the site's structure instead of a decorative flourish. -->
 			<div class="tape-rail" aria-hidden="true">
 				 <span class="tape-mark" data-label="SHOP">0"</span>
 				 <span class="tape-mark" data-label="ABOUT">6"</span>
@@ -52,37 +49,19 @@
 			</header>
 
 			<main id="main-content">
+				 <section aria-labelledby="contact-heading"><p class="eyebrow">Contact</p><h2 id="contact-heading">Send a general message</h2><p>For product pricing and availability, use our <a href="enquiries.html">product enquiry form</a>.</p><form class="enquiry-form" id="contact-form" name="contact" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field">
+							 <input type="hidden" name="form-name" value="contact">
+							 <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+							 <label>Full name <input name="name" autocomplete="name" required minlength="2" maxlength="100"></label>
+							 <label>Email address <input type="email" name="email" autocomplete="email" required maxlength="254"></label>
+							 <label>Phone (optional) <input type="tel" name="phone" autocomplete="tel" pattern="[+0-9() .-]{10,25}" title="Use 10–25 characters: digits, spaces, +, brackets or hyphens." maxlength="25"></label>
+							 <label>Message type <select name="topic" required>
+										 <option value="">Choose a topic</option><option>General question</option><option>Feedback</option><option>Order support</option></select></label>
 
-				 <!-- ===== VISIT / STORE INFO ===== -->
-				 <section class="visit" id="visit">
-						<div class="section-head">
-							 <p class="eyebrow">Visit</p>
-							 <h2>In store this week</h2>
-						</div>
-						<div class="visit-grid">
-							 <div class="visit-card">
-									<h3>Address</h3>
-									<p>214 Troye Street<br>Pretoria, South Africa</p>
-							 </div>
-							 <div class="visit-card">
-									<h3>Hours</h3>
-									<p>Mon–Fri: 9:00–17:30<br>Saturday: 9:00–14:00<br>Sunday: Closed</p>
-							 </div>
-							 <div class="visit-card">
-									<h3>Map</h3>
-									<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.639535314811!2d28.199419276088224!3d-25.749449345591343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95620b7791448f%3A0xc682f6e91cf7fc59!2s214%20Troye%20St%2C%20Sunnyside%2C%20Pretoria%2C%200002!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
-			width="100%"
-	 height="200"
-	style="border:0; border-radius: 2px;"
- allowfullscreen=""
- loading="lazy"
- referrerpolicy="no-referrer-when-downgrade">
-									</iframe>
-							 </div>
-						</div>
-				 </section>
-
+							 <label>Message <textarea name="message" rows="5" required minlength="10" maxlength="2000"></textarea></label>
+							 <button class="btn btn-primary" type="submit">Send message</button>
+							 <p class="form-status" role="status" aria-live="polite"></p>
+						</form><p id="email-draft-note">After validation, an email draft addressed to urbanThread@gmail.com is prepared below. Open the draft and send it using your email app.</p><a id="email-draft" class="btn btn-ghost" hidden>Open email draft</a></section>
 			</main>
 
 			<!-- ===== FOOTER ===== -->
@@ -115,8 +94,8 @@
 							 <div>
 									<h4>Follow</h4>
 									<ul>
-										 <li><a href="#">Instagram</a></li>
-										 <li><a href="#">Facebook</a></li>
+										 <li><a href="#">Instagram - profile coming soon</a></li>
+										 <li><a href="#">Facebook - profile coming soon</a></li>
 									</ul>
 							 </div>
 						</div>
@@ -124,6 +103,6 @@
 				 <p class="footer-legal">&copy; 2026 Urban Threads. All rights reserved.</p>
 			</footer>
 
-			<script src="js/script.js"></script>
+			<script defer src="js/script.js"></script>
 	 </body>
 </html>

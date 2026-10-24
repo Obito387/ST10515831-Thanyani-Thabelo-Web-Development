@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /thank-you
 
 Sitemap: https://splendorous-bienenstitch-e1a401.netlify.app/sitemap.xml

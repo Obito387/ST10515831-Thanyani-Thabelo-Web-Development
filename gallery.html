@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery — Urban Threads</title>
-  <meta name="description" content="Browse the Urban Threads product gallery: clothing, accessories, and footwear.">
+	<meta name="keywords" content="Urban Threads, Pretoria clothing, boutique, fashion, local wear">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-</head>
+ <meta name="description" content="Browse Urban Threads clothing, woven belts and street sneakers in Pretoria. Search the collection, compare prices and enquire about availability.">
+  <link rel="canonical" href="https://splendorous-bienenstitch-e1a401.netlify.app/gallery"></head>
 <body>
 
   <div class="tape-rail" aria-hidden="true">
@@ -52,83 +53,81 @@
     <section class="shop" id="shop">
       <div class="section-head">
         <p class="eyebrow">Gallery</p>
-        <h2>New arrivals</h2>
+        <h1>New arrivals</h1>
       </div>
 
       <div class="filter-bar">
         <button class="filter-chip is-active" type="button">All</button>
-        <button class="filter-chip" type="button">Clothing</button>
-        <button class="filter-chip" type="button">Accessories</button>
-        <button class="filter-chip" type="button">Footwear</button>
+        <button class="filter-chip" aria-pressed="false" type="button">Clothing</button>
+        <button class="filter-chip" aria-pressed="false" type="button">Accessories</button>
+        <button class="filter-chip" aria-pressed="false" type="button">Footwear</button>
       </div>
 
-      <ul class="product-grid">
-        <li class="product-card">
-          <div class="product-image">
-            <picture>
-              <source media="(max-width: 768px)" srcset="images/products/Image2-small.jpg">
-              <img src="images/products/Image2.jpg"
-                   srcset="images/products/Image2-small.jpg 400w, images/products/Image2.jpg 800w, images/products/Image2-large.jpg 1200w"
-                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                   alt="Denim jacket hanging on a rail" loading="lazy">
-            </picture>
-          </div>
-          <p class="product-cat">Clothing</p>
-          <h3>Canvas Field Jacket</h3>
-          <p class="product-price">R899.00</p>
-          <button class="btn btn-add" type="button" data-add>Add to cart</button>
-        </li>
-        <li class="product-card">
-          <div class="product-image">
-            <picture>
-              <source media="(max-width: 768px)" srcset="images/products/Image3-small.jpg">
-              <img src="images/products/Image3.jpg"
-                   srcset="images/products/Image3-small.jpg 400w, images/products/Image3.jpg 800w, images/products/Image3-large.jpg 1200w"
-                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                   alt="Close-up of a leather belt" loading="lazy">
-            </picture>
-          </div>
-          <p class="product-cat">Accessories</p>
-          <h3>Woven Belt — Tan</h3>
-          <p class="product-price">R249.00</p>
-          <button class="btn btn-add" type="button" data-add>Add to cart</button>
-        </li>
-				<li class="product-card">
-          <div class="product-image">
-            <picture>
-              <source media="(max-width: 768px)" srcset="images/products/sneaker-small.jpg">
-              <img src="images/products/sneaker.jpg"
-                   srcset="images/products/sneaker-small.jpg 400w, images/products/sneaker.jpg 800w, images/products/sneaker-large.jpg 1200w"
-                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                   alt="Low-top street sneaker" loading="lazy">
-            </picture>
-          </div>
-          <p class="product-cat">Footwear</p>
-          <h3>Low-Top Street Sneaker</h3>
-          <p class="product-price">R1,199.00</p>
-          <button class="btn btn-add" type="button" data-add>Add to cart</button>
-        </li>
-        <li class="product-card">
-          <div class="product-image">
-            <picture>
-              <source media="(max-width: 768px)" srcset="images/products/Image4-small.jpg">
-              <img src="images/products/Image4.jpg"
-                   srcset="images/products/Image4-small.jpg 400w, images/products/Image4.jpg 800w, images/products/Image4-large.jpg 1200w"
-                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                   alt="Folded white polo shirt" loading="lazy">
-            </picture>
-          </div>
-          <p class="product-cat">Clothing</p>
-          <h3>Relaxed Fit Tee</h3>
-          <p class="product-price">R249.00</p>
-          <button class="btn btn-add" type="button" data-add>Add to cart</button>
-        </li>
-      </ul>
+			<ul class="product-grid">
+				 <li class="product-card" data-category="clothing">
+						<div class="product-image">
+							 <picture>
+									<source media="(max-width: 768px)" srcset="images/products/Image2-small.jpg">
+										 <img class="lightbox-trigger" src="images/products/Image2.jpg"
+																				 srcset="images/products/Image2-small.jpg 400w, images/products/Image2.jpg 800w, images/products/Image2-large.jpg 1200w"
+										 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+					 alt="Canvas Field Jacket hanging on a rail" loading="lazy">
+							 </picture>
+						</div>
+						<p class="product-cat">Clothing</p>
+						<h3>Canvas Field Jacket</h3>
+						<p class="product-price">R899.00</p>
+						<button class="btn btn-add" type="button" data-add>Add to cart</button>
+				 </li>
+				 <li class="product-card" data-category="accessories">
+						<div class="product-image">
+							 <picture>
+									<source media="(max-width: 768px)" srcset="images/products/Image3-small.jpg">
+										 <img class="lightbox-trigger" src="images/products/Image3.jpg"
+																				 srcset="images/products/Image3-small.jpg 400w, images/products/Image3.jpg 800w, images/products/Image3-large.jpg 1200w"
+										 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+					 alt="Close-up of a tan woven leather belt" loading="lazy">
+							 </picture>
+						</div>
+						<p class="product-cat">Accessories</p>
+						<h3>Woven Belt — Tan</h3>
+						<p class="product-price">R249.00</p>
+						<button class="btn btn-add" type="button" data-add>Add to cart</button>
+				 </li>
+				 <li class="product-card" data-category="footwear">
+						<div class="product-image">
+							 <picture>
+									<source media="(max-width: 768px)" srcset="images/products/sneaker-small.jpg">
+										 <img class="lightbox-trigger" src="images/products/sneaker.jpg"
+																				 srcset="images/products/sneaker-small.jpg 400w, images/products/sneaker.jpg 800w, images/products/sneaker-large.jpg 1200w"
+										 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+					 alt="Low-top street sneaker" loading="lazy">
+							 </picture>
+						</div>
+						<p class="product-cat">Footwear</p>
+						<h3>Low-Top Street Sneaker</h3>
+						<p class="product-price">R1,199.00</p>
+						<button class="btn btn-add" type="button" data-add>Add to cart</button>
+				 </li>
+				 <li class="product-card" data-category="clothing">
+						<div class="product-image">
+							 <picture>
+									<source media="(max-width: 768px)" srcset="images/products/Image4-small.jpg">
+										 <img class="lightbox-trigger" src="images/products/Image4.jpg"
+																				 srcset="images/products/Image4-small.jpg 400w, images/products/Image4.jpg 800w, images/products/Image4-large.jpg 1200w"
+										 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+					 alt="Folded white polo shirt" loading="lazy">
+							 </picture>
+						</div>
+						<p class="product-cat">Clothing</p>
+						<h3>White Polo Shirt</h3>
+						<p class="product-price">R249.00</p>
+						<button class="btn btn-add" type="button" data-add>Add to cart</button>
+				 </li>
+			</ul>
 
-      <p class="shop-note">* Product data on this page is placeholder content for the Part 1
-        prototype and will be replaced with the store's real catalogue and photography.</p>
-    </section>
-
+			<p class="shop-note">* Demonstration catalogue. Prices are indicative; enquire for confirmed stock and a quote.</p>
+		</section>
   </main>
 
   <footer class="site-footer">
@@ -156,12 +155,12 @@
             <li><a href="contact.html">Visit</a></li>
             <li><a href="enquiries.html">Enquiries</a></li>
           </ul>
-        </div>
+        </div
         <div>
           <h4>Follow</h4>
           <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram - profile coming soon</a></li>
+            <li><a href="#">Facebook - profile coming soon</a></li>
           </ul>
         </div>
       </div>
@@ -169,6 +168,6 @@
     <p class="footer-legal">&copy; 2026 Urban Threads. All rights reserved.</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script defer src="js/script.js"></script>
 </body>
 </html>
