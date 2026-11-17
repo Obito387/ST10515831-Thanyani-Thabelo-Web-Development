@@ -319,7 +319,8 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (_) {}
 
       status.classList.remove('is-error');
-      status.textContent = `Thank you, ${name}! Your ${topic.toLowerCase()} for ${qty} × ${item.label} (indicative total: R${total}) has been submitted. Our Pretoria team will confirm stock and final pricing shortly.`;
+      const eqMail = `mailto:urbanThread@gmail.com?subject=${encodeURIComponent(`Urban Threads Enquiry - ${item.label}`)}&body=${encodeURIComponent(`Name: ${name}\nTopic: ${topic}\nProduct: ${item.label}\nQuantity: ${qty}\nIndicative Total: R${total}`)}`;
+      status.innerHTML = `Thank you, ${name}! Your ${topic.toLowerCase()} for ${qty} &times; ${item.label} (indicative total: R${total}) has been submitted. <a href="${eqMail}" class="btn btn-ghost" style="margin-top:.5rem;display:inline-block;">Send Email Copy</a>`;
       enquiriesForm.reset();
     });
   }
@@ -367,3 +368,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
