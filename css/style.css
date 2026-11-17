@@ -862,3 +862,11 @@ button:disabled { opacity: .65; cursor: wait; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Lightbox Navigation & Form Feedback Enhancements */
+.lightbox-inner { display: flex; flex-direction: column; align-items: center; gap: .75rem; max-width: 90vw; }
+.lightbox-nav { display: flex; gap: 1rem; align-items: center; }
+.lightbox-nav button { background: var(--primary-color); color: #fff; border: 0; padding: .5rem 1rem; border-radius: 4px; cursor: pointer; font-family: var(--font-heading); }
+.lightbox-nav button:hover { background: var(--accent-color); }
+.form-status { padding: .85rem 1rem; border-radius: 4px; background: #e8f5e9; color: #1b5e20; border-left: 4px solid #2e7d32; margin-top: .5rem; }
+.form-status.is-error { background: #ffebee; color: #b71c1c; border-left-color: #d9534f; }

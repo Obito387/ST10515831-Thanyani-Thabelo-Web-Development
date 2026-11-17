@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery — Urban Threads</title>
-	<meta name="keywords" content="Urban Threads, Pretoria clothing, boutique, fashion, local wear">
+	<meta name="keywords" content="Urban Threads gallery, Canvas Field Jacket, Woven Leather Belt, Low-Top Street Sneaker, White Polo Shirt Pretoria">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -56,12 +56,23 @@
         <h1>New arrivals</h1>
       </div>
 
-      <div class="filter-bar">
+            <div class="filter-bar">
         <button class="filter-chip is-active" type="button">All</button>
         <button class="filter-chip" aria-pressed="false" type="button">Clothing</button>
         <button class="filter-chip" aria-pressed="false" type="button">Accessories</button>
         <button class="filter-chip" aria-pressed="false" type="button">Footwear</button>
       </div>
+      <div class="sort-control">
+        <label for="sortSelect">Sort catalogue</label>
+        <select id="sortSelect">
+          <option value="default">Featured order</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name-asc">Name: A–Z</option>
+        </select>
+      </div>
+      <p id="catalogCount" class="eyebrow" role="status" aria-live="polite">Showing 4 of 4 items</p>
+      <p id="noResultsMsg" class="shop-note" hidden>No matching products found. Try clearing your search or selecting "All".</p>
 
 			<ul class="product-grid">
 				 <li class="product-card" data-category="clothing">
@@ -155,7 +166,7 @@
             <li><a href="contact.html">Visit</a></li>
             <li><a href="enquiries.html">Enquiries</a></li>
           </ul>
-        </div
+        </div>
         <div>
           <h4>Follow</h4>
           <ul>
@@ -171,3 +182,4 @@
   <script defer src="js/script.js"></script>
 </body>
 </html>
+
